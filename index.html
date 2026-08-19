@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards: Óptica na Robótica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🤖 Óptica e Robótica 🌟</h1>
+        <p>Estude os conceitos de luz aplicados aos sistemas robóticos e sensores.</p>
+    </header>
+
+    <main class="container">
+        <!-- Seletor de Categorias -->
+        <div class="selector-container">
+            <label for="category-select">Escolha o Tema:</label>
+            <select id="category-select">
+                <option value="propriedades">Óptica / Propriedades da Luz</option>
+                <option value="reflexao">Óptica / Reflexão da Luz</option>
+                <option value="espelhos">Óptica / Espelhos</option>
+                <option value="fenomenos">Óptica / Fenômenos da Luz</option>
+                <option value="lentes">Óptica / Lentes</option>
+                <option value="corpo-humano">Óptica do Corpo Humano (e Visão Computacional)</option>
+            </select>
+        </div>
+
+        <!-- Área do Flashcard -->
+        <div class="card-container">
+            <div class="flashcard" id="flashcard">
+                <div class="card-face card-front">
+                    <span class="card-category" id="card-category-text">Categoria</span>
+                    <p class="card-text" id="card-question">Pergunta</p>
+                    <span class="click-hint">🔄 Clique para ver a resposta</span>
+                </div>
+                <div class="card-face card-back">
+                    <span class="card-category">Resposta</span>
+                    <p class="card-text" id="card-answer">Resposta</p>
+                    <span class="click-hint">🔄 Clique para voltar à pergunta</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles de Navegação -->
+        <div class="controls">
+            <button id="prev-btn" class="btn">◀ Voltar</button>
+            <span id="card-counter">1 / 1</span>
+            <button id="next-btn" class="btn">Avançar ▶</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
