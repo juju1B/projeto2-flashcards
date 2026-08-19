@@ -1,4 +1,4 @@
-// Banco de dados de flashcards focados em óptica e robótica
+//Banco de dados de flashcards focados em óptica e robótica
 const flashcardsData = {
     propriedades: [
         {
