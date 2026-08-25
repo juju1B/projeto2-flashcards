@@ -109,7 +109,7 @@ select:focus {
 
 .card-back {
     background: linear-gradient(135deg, #0369a1, #0c4a6e);
-    border: 2px solid #7dd3fc;
+    border: 2px solid #C71585;
     transform: rotateY(180deg);
 }
 
