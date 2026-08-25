@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #FFC0CB;
-    color: #FF1493;
+    background-color: #fdf2f8; /* Rosa bem claro e suave */
+    color: #831843; /* Rosa escuro para excelente leitura */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -22,12 +22,12 @@ header {
 }
 
 header h1 {
-    color: #C71585;
+    color: #9d174d; /* Rosa magenta escuro */
     margin-bottom: 8px;
 }
 
 header p {
-    color: #000000;
+    color: #be185d; /* Rosa médio */
 }
 
 .container {
@@ -50,18 +50,19 @@ header p {
 select {
     width: 100%;
     padding: 12px;
-    background-color: #1e293b;
-    color: #f8fafc;
-    border: 2px solid #334155;
+    background-color: #ffffff;
+    color: #831843;
+    border: 2px solid #fbcfe8;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
     outline: none;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 select:focus {
-    border-color: #EE82EE;
+    border-color: #ec4899;
+    box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.2);
 }
 
 /* Container do Card com Perspectiva 3D */
@@ -99,17 +100,19 @@ select:focus {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 25px -5px rgba(219, 39, 119, 0.15);
 }
 
 .card-front {
-    background: linear-gradient(135deg, #1e293b, #0f172a);
-    border: 2px solid #EE82EE;
+    background: linear-gradient(135deg, #ffffff, #fce7f3);
+    border: 2px solid #f472b6;
+    color: #831843;
 }
 
 .card-back {
-    background: linear-gradient(135deg, #0369a1, #0c4a6e);
-    border: 2px solid #C71585;
+    background: linear-gradient(135deg, #db2777, #9d174d);
+    border: 2px solid #be185d;
+    color: #ffffff;
     transform: rotateY(180deg);
 }
 
@@ -118,12 +121,12 @@ select:focus {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #38bdf8;
+    color: #db2777;
     font-weight: bold;
 }
 
 .card-back .card-category {
-    color: #f0fdfa;
+    color: #fbcfe8;
 }
 
 .card-text {
@@ -134,11 +137,13 @@ select:focus {
 
 .click-hint {
     font-size: 13px;
-    color: #64748b;
+    color: #9d174d;
+    opacity: 0.8;
 }
 
 .card-back .click-hint {
-    color: #bae6fd;
+    color: #fce7f3;
+    opacity: 0.9;
 }
 
 /* Controles */
@@ -149,8 +154,8 @@ select:focus {
 }
 
 .btn {
-    background-color: #38bdf8;
-    color: #0f172a;
+    background-color: #ec4899;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -158,10 +163,11 @@ select:focus {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
 }
 
 .btn:hover {
-    background-color: #7dd3fc;
+    background-color: #db2777;
 }
 
 .btn:active {
@@ -170,7 +176,8 @@ select:focus {
 
 #card-counter {
     font-size: 16px;
-    color: #94a3b8;
+    color: #be185d;
     min-width: 60px;
     text-align: center;
+    font-weight: 600;
 }
