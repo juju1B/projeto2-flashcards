@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #fdf2f8; /* Rosa bem claro e suave */
-    color: #831843; /* Rosa escuro para excelente leitura */
+    background-color: #fdf2f8; 
+    color: #831843; 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -22,12 +22,12 @@ header {
 }
 
 header h1 {
-    color: #9d174d; /* Rosa magenta escuro */
+    color: #9d174d; 
     margin-bottom: 8px;
 }
 
 header p {
-    color: #be185d; /* Rosa médio */
+    color: #be185d; 
 }
 
 .container {
@@ -65,7 +65,7 @@ select:focus {
     box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.2);
 }
 
-/* Container do Card com Perspectiva 3D */
+/* Card*/
 .card-container {
     width: 100%;
     height: 320px;
