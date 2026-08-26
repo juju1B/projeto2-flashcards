@@ -65,10 +65,10 @@ select:focus {
     box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.2);
 }
 
-/* Card*/
+/* Card Container */
 .card-container {
     width: 100%;
-    height: 320px;
+    height: 420px;
     perspective: 1000px;
 }
 
@@ -94,7 +94,7 @@ select:focus {
     height: 100%;
     backface-visibility: hidden;
     border-radius: 16px;
-    padding: 30px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -116,6 +116,15 @@ select:focus {
     transform: rotateY(180deg);
 }
 
+/* Imagem no topo do card */
+.card-image {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
 /* Textos dentro do Card */
 .card-category {
     font-size: 12px;
@@ -130,9 +139,9 @@ select:focus {
 }
 
 .card-text {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .click-hint {
