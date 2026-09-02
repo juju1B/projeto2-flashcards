@@ -9,7 +9,7 @@ const flashcardsData = {
     ],
     "fenda-dupla": [
         {
-            imagem: "experimento-fenda-dupla.jpg",
+            imagem: "https://postimg.cc/CZjHtbhx",
             pergunta: "O que o experimento de fenda dupla com laser demonstra sobre a natureza da luz?",
             resposta: "Demonstra a natureza ondulatória da luz através do fenômeno da interferência (construtiva e destrutiva), formando um padrão de franjas claras e escuras no anteparo."
         }
@@ -51,7 +51,7 @@ const flashcardsData = {
     ],
     "sensor-gas-fumaca": [
         {
-            imagem: "experimento-sensor.jpg",
+            imagem: "https://postimg.cc/CZjHtbhx",
             pergunta: "Como a integração do módulo Arduino com o sensor de gás/fumaça funciona para emissão de alertas?",
             resposta: "O sensor lê a variação na concentração de fumaça/gás e altera sua resistência. O Arduino processa o sinal analógico e aciona os LEDs e displays OLED indicando os níveis de alerta."
         }

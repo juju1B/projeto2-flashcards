@@ -1,10 +1,19 @@
-# projeto2-flashcard
-#Flashcards de Óptica na Robótica
+#  Flashcards: Óptica e Sensores na Robótica
 
-Um sistema interativo e simples de cartões de estudo (flashcards) focado em conceitos de óptica física e geométrica aplicados ao desenvolvimento de robôs, sensores e visão computacional.
+Um projeto interativo de flashcards desenvolvido para auxiliar no estudo de conceitos de óptica e sensores aplicados à robótica, incluindo experimentos práticos com Arduino e lasers.
 
-## Tecnologias Utilizadas
-- HTML5 (Estrutura semântica)
-- CSS3 (Estilização responsiva e efeitos de rotação 3D)
-- JavaScript Vanilla (Manipulação de dados e estados do DOM)
-- Gemini (formulação das perguntas e respostas e estilização)
+##  Tecnologias Utilizadas
+
+* **HTML5**: Estrutura da aplicação
+* **CSS3**: Estilização e animações 3D dos cards
+* **JavaScript**: Lógica de alternância, filtros e interatividade
+
+##  Estrutura do Projeto
+
+```text
+/
+├── index.html
+├── style.css
+├── script.js
+├── experimento-sensor.jpg
+└── experimento-fenda-dupla.jpg
