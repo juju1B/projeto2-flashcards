@@ -1,10 +1,17 @@
-// Banco de dados de flashcards com imagens, perguntas e respostas
+// Banco de dados de flashcards contendo as imagens dos seus experimentos reais
 const flashcardsData = {
     propriedades: [
         {
             imagem: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80",
             pergunta: "O que é o Princípio da Dualidade Onda-Partícula da luz e qual sua importância em sensores robóticos?",
             resposta: "A luz se comporta como onda (propagação) e partícula/fóton (interação). Na robótica, entender os fótons é crucial para o funcionamento de sensores fotoelétricos e câmeras digitais (sensores CMOS)."
+        }
+    ],
+    "fenda-dupla": [
+        {
+            imagem: "experimento-fenda-dupla.jpg",
+            pergunta: "O que o experimento de fenda dupla com laser demonstra sobre a natureza da luz?",
+            resposta: "Demonstra a natureza ondulatória da luz através do fenômeno da interferência (construtiva e destrutiva), formando um padrão de franjas claras e escuras no anteparo."
         }
     ],
     reflexao: [
@@ -42,18 +49,11 @@ const flashcardsData = {
             resposta: "A íris regula a entrada de luz alterando a pupila. Nas câmeras robóticas, o mecanismo do 'diafragma' (abertura) ou o tempo de exposição digital controlam essa quantidade de luz."
         }
     ],
-    "sensor-gas": [
+    "sensor-gas-fumaca": [
         {
-            imagem: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80",
-            pergunta: "Como funciona um sensor de gás semicondutor (como a série MQ) em robôs de inspeção?",
-            resposta: "Quando gases inflamáveis ou tóxicos entram em contato com o elemento aquecido de dióxido de estanho (SnO2), a resistência elétrica altera, gerando um sinal lido pelo microcontrolador."
-        }
-    ],
-    "sensor-fumaca": [
-        {
-            imagem: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80",
-            pergunta: "Qual é o princípio óptico utilizado nos detectores e sensores de fumaça robóticos?",
-            resposta: "A técnica de espalhamento de luz (Efeito Tyndall): a fumaça entra na câmara do sensor e desvia o feixe de LED infravermelho em direção a um fotodiodo, ativando o alarme."
+            imagem: "experimento-sensor.jpg",
+            pergunta: "Como a integração do módulo Arduino com o sensor de gás/fumaça funciona para emissão de alertas?",
+            resposta: "O sensor lê a variação na concentração de fumaça/gás e altera sua resistência. O Arduino processa o sinal analógico e aciona os LEDs e displays OLED indicando os níveis de alerta."
         }
     ]
 };
