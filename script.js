@@ -1,4 +1,4 @@
-// Banco de dados de flashcards: 1 pergunta + 1 imagem por tema
+// Banco de dados de flashcards com imagens, perguntas e respostas
 const flashcardsData = {
     propriedades: [
         {
@@ -40,6 +40,20 @@ const flashcardsData = {
             imagem: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80",
             pergunta: "Qual a analogia mecânica entre a íris/pupila humana e as câmeras dos robôs?",
             resposta: "A íris regula a entrada de luz alterando a pupila. Nas câmeras robóticas, o mecanismo do 'diafragma' (abertura) ou o tempo de exposição digital controlam essa quantidade de luz."
+        }
+    ],
+    "sensor-gas": [
+        {
+            imagem: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80",
+            pergunta: "Como funciona um sensor de gás semicondutor (como a série MQ) em robôs de inspeção?",
+            resposta: "Quando gases inflamáveis ou tóxicos entram em contato com o elemento aquecido de dióxido de estanho (SnO2), a resistência elétrica altera, gerando um sinal lido pelo microcontrolador."
+        }
+    ],
+    "sensor-fumaca": [
+        {
+            imagem: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80",
+            pergunta: "Qual é o princípio óptico utilizado nos detectores e sensores de fumaça robóticos?",
+            resposta: "A técnica de espalhamento de luz (Efeito Tyndall): a fumaça entra na câmara do sensor e desvia o feixe de LED infravermelho em direção a um fotodiodo, ativando o alarme."
         }
     ]
 };
