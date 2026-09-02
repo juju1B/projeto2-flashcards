@@ -9,7 +9,7 @@ const flashcardsData = {
     ],
     "fenda-dupla": [
         {
-            imagem: "https://postimg.cc/bDmbcT4m",
+            imagem: "<a href='https://postimg.cc/CZjHtbhx' target='_blank'><img src='https://i.postimg.cc/CZjHtbhx/PHOTO-2026-09-02-11-03-10.jpg' border='0' alt='PHOTO-2026-09-02-11-03-10'></a>",
             pergunta: "O que o experimento de fenda dupla com laser demonstra sobre a natureza da luz?",
             resposta: "Demonstra a natureza ondulatória da luz através do fenômeno da interferência (construtiva e destrutiva), formando um padrão de franjas claras e escuras no anteparo."
         }
