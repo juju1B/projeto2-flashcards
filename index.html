@@ -1,59 +1,187 @@
+O ChatGPT disse:
+Claro. Vou separar em 3 arquivos, exatamente para você copiar e colar:
+
+seu-projeto/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+└── imagens/
+    ├── sensor-gas-fumaca.jpg
+    └── fenda-dupla.jpg
+
+Importante: coloque as duas fotos que você enviou dentro da pasta imagens e renomeie como indicado acima.
+
+📄 1. HTML — index.html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Flashcards: Óptica e Sensores na Robótica</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
         <h1>Óptica e Robótica</h1>
-        <p>Estude os conceitos de luz aplicados aos sistemas robóticos e sensores.</p>
+
+        <p>
+            Estude os conceitos de luz aplicados aos sistemas robóticos e sensores.
+        </p>
     </header>
 
+
     <main class="container">
-        
+
+        <!-- SELETOR DE CATEGORIA -->
+
         <div class="selector-container">
-            <label for="category-select">Escolha o Tema:</label>
+
+            <label for="category-select">
+                Escolha o Tema:
+            </label>
+
             <select id="category-select">
-                <option value="propriedades">Óptica / Propriedades da Luz</option>
-                <option value="fenda-dupla">Experimento / Fenda Dupla (Interferência)</option>
-                <option value="reflexao">Óptica / Reflexão da Luz</option>
-                <option value="espelhos">Óptica / Espelhos</option>
-                <option value="fenomenos">Óptica / Fenômenos da Luz</option>
-                <option value="lentes">Óptica / Lentes</option>
-                <option value="corpo-humano">Óptica do Corpo Humano</option>
-                <option value="sensor-gas-fumaca">Experimento / Sensor de Gás e Fumaça</option>
+
+                <option value="propriedades">
+                    Óptica / Propriedades da Luz
+                </option>
+
+                <option value="fenda-dupla">
+                    Experimento / Fenda Dupla (Interferência)
+                </option>
+
+                <option value="reflexao">
+                    Óptica / Reflexão da Luz
+                </option>
+
+                <option value="espelhos">
+                    Óptica / Espelhos
+                </option>
+
+                <option value="fenomenos">
+                    Óptica / Fenômenos da Luz
+                </option>
+
+                <option value="lentes">
+                    Óptica / Lentes
+                </option>
+
+                <option value="corpo-humano">
+                    Óptica do Corpo Humano
+                </option>
+
+                <option value="sensor-gas-fumaca">
+                    Experimento / Sensor de Gás e Fumaça
+                </option>
+
             </select>
+
         </div>
 
-        <!-- Área do Flashcard -->
+
+        <!-- FLASHCARD -->
+
         <div class="card-container">
+
             <div class="flashcard" id="flashcard">
+
+
+                <!-- FRENTE DO CARD -->
+
                 <div class="card-face card-front">
-                    <img id="card-image" class="card-image" src="" alt="Ilustração do tema">
-                    <span class="card-category" id="card-category-text">Categoria</span>
-                    <p class="card-text" id="card-question">Pergunta</p>
-                    <span class="click-hint">Clique para ver a resposta</span>
+
+                    <img
+                        id="card-image"
+                        class="card-image"
+                        src=""
+                        alt="Imagem do experimento"
+                    >
+
+                    <span
+                        class="card-category"
+                        id="card-category-text"
+                    >
+                        Categoria
+                    </span>
+
+                    <p
+                        class="card-text"
+                        id="card-question"
+                    >
+                        Pergunta
+                    </p>
+
+                    <span class="click-hint">
+                        Clique para ver a resposta
+                    </span>
+
                 </div>
+
+
+                <!-- VERSO DO CARD -->
+
                 <div class="card-face card-back">
-                    <span class="card-category">Resposta</span>
-                    <p class="card-text" id="card-answer">Resposta</p>
-                    <span class="click-hint">Clique para voltar à pergunta</span>
+
+                    <span class="card-category">
+                        Resposta
+                    </span>
+
+                    <p
+                        class="card-text"
+                        id="card-answer"
+                    >
+                        Resposta
+                    </p>
+
+                    <span class="click-hint">
+                        Clique para voltar à pergunta
+                    </span>
+
                 </div>
+
             </div>
+
         </div>
 
-        <!-- Controles de Navegação -->
+
+        <!-- CONTROLES -->
+
         <div class="controls">
-            <button id="prev-btn" class="btn">Voltar</button>
-            <span id="card-counter">1 / 1</span>
-            <button id="next-btn" class="btn">Avançar</button>
+
+            <button
+                id="prev-btn"
+                class="btn"
+            >
+                Voltar
+            </button>
+
+            <span id="card-counter">
+                1 / 1
+            </span>
+
+            <button
+                id="next-btn"
+                class="btn"
+            >
+                Avançar
+            </button>
+
         </div>
+
     </main>
 
+
+    <!-- JAVASCRIPT -->
+
     <script src="script.js"></script>
+
 </body>
+
 </html>

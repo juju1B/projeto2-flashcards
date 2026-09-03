@@ -1,119 +1,349 @@
-// Banco de dados de flashcards contendo as imagens dos seus experimentos reais
+// =========================================
+// BANCO DE DADOS DOS FLASHCARDS
+// =========================================
+
 const flashcardsData = {
+
+    // -----------------------------------------
+    // PROPRIEDADES DA LUZ
+    // -----------------------------------------
+
     propriedades: [
+
         {
-            imagem: "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80",
-            pergunta: "O que é o Princípio da Dualidade Onda-Partícula da luz e qual sua importância em sensores robóticos?",
-            resposta: "A luz se comporta como onda (propagação) e partícula/fóton (interação). Na robótica, entender os fótons é crucial para o funcionamento de sensores fotoelétricos e câmeras digitais (sensores CMOS)."
+            imagem:
+                "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=600&q=80",
+
+            pergunta:
+                "O que é o Princípio da Dualidade Onda-Partícula da luz e qual sua importância em sensores robóticos?",
+
+            resposta:
+                "A luz se comporta como onda e como partícula, chamada fóton. Na robótica, esse conceito é importante para compreender o funcionamento de sensores fotoelétricos, câmeras digitais e sensores CMOS."
         }
+
     ],
+
+
+    // -----------------------------------------
+    // FENDA DUPLA
+    // FOTO REAL DO EXPERIMENTO
+    // -----------------------------------------
+
     "fenda-dupla": [
+
         {
-            imagem: "<a href='https://postimg.cc/CZjHtbhx' target='_blank'><img src='https://i.postimg.cc/CZjHtbhx/PHOTO-2026-09-02-11-03-10.jpg' border='0' alt='PHOTO-2026-09-02-11-03-10'></a>",
-            pergunta: "O que o experimento de fenda dupla com laser demonstra sobre a natureza da luz?",
-            resposta: "Demonstra a natureza ondulatória da luz através do fenômeno da interferência (construtiva e destrutiva), formando um padrão de franjas claras e escuras no anteparo."
+            imagem:
+                "imagens/fenda-dupla.jpg",
+
+            pergunta:
+                "O que o experimento de fenda dupla com laser demonstra sobre a natureza da luz?",
+
+            resposta:
+                "O experimento demonstra a natureza ondulatória da luz por meio da interferência. Quando a luz passa pelas duas fendas, ocorre interferência construtiva e destrutiva, formando regiões claras e escuras no anteparo."
         }
+
     ],
+
+
+    // -----------------------------------------
+    // REFLEXÃO
+    // -----------------------------------------
+
     reflexao: [
+
         {
-            imagem: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80",
-            pergunta: "Diferencie reflexão especular de reflexão difusa no contexto de sensores ópticos.",
-            resposta: "Especular ocorre em superfícies lisas, refletindo em uma só direção. Difusa ocorre em superfícies irregulares, espalhando a luz. Sensores de proximidade robóticos dependem da reflexão difusa para detectar objetos comuns."
+            imagem:
+                "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80",
+
+            pergunta:
+                "Diferencie reflexão especular de reflexão difusa no contexto de sensores ópticos.",
+
+            resposta:
+                "A reflexão especular ocorre em superfícies lisas, refletindo a luz principalmente em uma direção. A reflexão difusa ocorre em superfícies irregulares, espalhando a luz em várias direções."
         }
+
     ],
+
+
+    // -----------------------------------------
+    // ESPELHOS
+    // -----------------------------------------
+
     espelhos: [
+
         {
-            imagem: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80",
-            pergunta: "Por que robôs móveis autônomos utilizam espelhos convexos em seus sistemas ópticos?",
-            resposta: "Espelhos convexos aumentam o campo de visão (ângulo amplo), permitindo que uma única câmera robótica montada no topo detecte obstáculos em 360° (visão omnidirecional)."
+            imagem:
+                "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80",
+
+            pergunta:
+                "Por que robôs móveis autônomos utilizam espelhos convexos em seus sistemas ópticos?",
+
+            resposta:
+                "Espelhos convexos aumentam o campo de visão, permitindo que uma câmera ou sistema óptico observe uma área maior do ambiente."
         }
+
     ],
+
+
+    // -----------------------------------------
+    // FENÔMENOS DA LUZ
+    // -----------------------------------------
+
     fenomenos: [
+
         {
-            imagem: "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&w=600&q=80",
-            pergunta: "Como o fenômeno da refração da luz afeta robôs submarinos (ROVs)?",
-            resposta: "A luz muda de velocidade e direção ao passar da água para o vidro protetor da câmera. Se o software do robô não corrigir essa distorção por refração, ele errará o cálculo de distância dos objetos."
+            imagem:
+                "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&w=600&q=80",
+
+            pergunta:
+                "Como o fenômeno da refração da luz afeta robôs submarinos (ROVs)?",
+
+            resposta:
+                "A luz muda de velocidade e direção ao passar da água para o vidro que protege a câmera. Essa alteração pode causar distorções nas imagens e afetar os cálculos de distância."
         }
+
     ],
+
+
+    // -----------------------------------------
+    // LENTES
+    // -----------------------------------------
+
     lentes: [
+
         {
-            imagem: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80",
-            pergunta: "Qual o papel de uma lente convergente no sistema de visão computacional de um robô?",
-            resposta: "Ela foca a luz refletida pelo ambiente diretamente sobre o sensor digital (CCD/CMOS), gerando uma imagem nítida para processamento."
+            imagem:
+                "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80",
+
+            pergunta:
+                "Qual o papel de uma lente convergente no sistema de visão computacional de um robô?",
+
+            resposta:
+                "A lente convergente direciona e focaliza a luz sobre o sensor digital da câmera, formando uma imagem que poderá ser processada pelo sistema computacional do robô."
         }
+
     ],
+
+
+    // -----------------------------------------
+    // CORPO HUMANO
+    // -----------------------------------------
+
     "corpo-humano": [
+
         {
-            imagem: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80",
-            pergunta: "Qual a analogia mecânica entre a íris/pupila humana e as câmeras dos robôs?",
-            resposta: "A íris regula a entrada de luz alterando a pupila. Nas câmeras robóticas, o mecanismo do 'diafragma' (abertura) ou o tempo de exposição digital controlam essa quantidade de luz."
+            imagem:
+                "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80",
+
+            pergunta:
+                "Qual a analogia entre a íris/pupila humana e as câmeras dos robôs?",
+
+            resposta:
+                "A íris humana regula a quantidade de luz que entra pela pupila. Nas câmeras robóticas, o diafragma e o tempo de exposição desempenham funções semelhantes."
         }
+
     ],
+
+
+    // -----------------------------------------
+    // SENSOR DE GÁS E FUMAÇA
+    // FOTO REAL DO EXPERIMENTO
+    // -----------------------------------------
+
     "sensor-gas-fumaca": [
+
         {
-            imagem: "https://postimg.cc/CZjHtbhx",
-            pergunta: "Como a integração do módulo Arduino com o sensor de gás/fumaça funciona para emissão de alertas?",
-            resposta: "O sensor lê a variação na concentração de fumaça/gás e altera sua resistência. O Arduino processa o sinal analógico e aciona os LEDs e displays OLED indicando os níveis de alerta."
+            imagem:
+                "imagens/sensor-gas-fumaca.jpg",
+
+            pergunta:
+                "Como funciona o sensor de gás e fumaça conectado ao Arduino?",
+
+            resposta:
+                "O sensor detecta alterações na concentração de determinados gases ou fumaça no ambiente. O Arduino recebe o sinal do sensor, processa a informação e pode acionar LEDs, displays ou outros dispositivos para indicar diferentes níveis de alerta."
         }
+
     ]
+
 };
 
-// Variáveis de estado
+
+// =========================================
+// VARIÁVEIS DE ESTADO
+// =========================================
+
 let currentCategory = "propriedades";
+
 let currentIndex = 0;
 
-// Seletores do DOM
-const categorySelect = document.getElementById("category-select");
-const flashcard = document.getElementById("flashcard");
-const cardImage = document.getElementById("card-image");
-const cardCategoryText = document.getElementById("card-category-text");
-const cardQuestion = document.getElementById("card-question");
-const cardAnswer = document.getElementById("card-answer");
-const prevBtn = document.getElementById("prev-btn");
-const nextBtn = document.getElementById("next-btn");
-const cardCounter = document.getElementById("card-counter");
 
-// Função para atualizar os dados do card
+// =========================================
+// ELEMENTOS DO HTML
+// =========================================
+
+const categorySelect =
+    document.getElementById("category-select");
+
+const flashcard =
+    document.getElementById("flashcard");
+
+const cardImage =
+    document.getElementById("card-image");
+
+const cardCategoryText =
+    document.getElementById("card-category-text");
+
+const cardQuestion =
+    document.getElementById("card-question");
+
+const cardAnswer =
+    document.getElementById("card-answer");
+
+const prevBtn =
+    document.getElementById("prev-btn");
+
+const nextBtn =
+    document.getElementById("next-btn");
+
+const cardCounter =
+    document.getElementById("card-counter");
+
+
+// =========================================
+// ATUALIZAR O FLASHCARD
+// =========================================
+
 function updateCard() {
-    const currentList = flashcardsData[currentCategory];
-    const cardData = currentList[currentIndex];
+
+    const currentList =
+        flashcardsData[currentCategory];
+
+    const cardData =
+        currentList[currentIndex];
+
+
+    // Volta o card para a frente
 
     flashcard.classList.remove("flipped");
 
+
+    // Pequeno atraso para deixar a animação suave
+
     setTimeout(() => {
-        cardImage.src = cardData.imagem;
-        cardCategoryText.textContent = categorySelect.options[categorySelect.selectedIndex].text;
-        cardQuestion.textContent = cardData.pergunta;
-        cardAnswer.textContent = cardData.resposta;
-        cardCounter.textContent = `${currentIndex + 1} / ${currentList.length}`;
+
+        // Imagem
+
+        cardImage.src =
+            cardData.imagem;
+
+        cardImage.alt =
+            "Imagem do experimento";
+
+
+        // Categoria
+
+        cardCategoryText.textContent =
+            categorySelect
+                .options[
+                    categorySelect.selectedIndex
+                ]
+                .text;
+
+
+        // Pergunta
+
+        cardQuestion.textContent =
+            cardData.pergunta;
+
+
+        // Resposta
+
+        cardAnswer.textContent =
+            cardData.resposta;
+
+
+        // Contador
+
+        cardCounter.textContent =
+            `${currentIndex + 1} / ${currentList.length}`;
+
     }, 150);
+
 }
 
-// Evento: Virar o card
+
+// =========================================
+// VIRAR O CARD
+// =========================================
+
 flashcard.addEventListener("click", () => {
+
     flashcard.classList.toggle("flipped");
+
 });
 
-// Evento: Mudar de categoria
-categorySelect.addEventListener("change", (e) => {
-    currentCategory = e.target.value;
-    currentIndex = 0;
-    updateCard();
-});
 
-// Evento: Botão Avançar
+// =========================================
+// TROCAR CATEGORIA
+// =========================================
+
+categorySelect.addEventListener(
+    "change",
+    (event) => {
+
+        currentCategory =
+            event.target.value;
+
+        currentIndex = 0;
+
+        updateCard();
+
+    }
+);
+
+
+// =========================================
+// BOTÃO AVANÇAR
+// =========================================
+
 nextBtn.addEventListener("click", () => {
-    const currentList = flashcardsData[currentCategory];
-    currentIndex = (currentIndex + 1) % currentList.length;
+
+    const currentList =
+        flashcardsData[currentCategory];
+
+
+    currentIndex =
+        (currentIndex + 1) %
+        currentList.length;
+
+
     updateCard();
+
 });
 
-// Evento: Botão Voltar
+
+// =========================================
+// BOTÃO VOLTAR
+// =========================================
+
 prevBtn.addEventListener("click", () => {
-    const currentList = flashcardsData[currentCategory];
-    currentIndex = (currentIndex - 1 + currentList.length) % currentList.length;
+
+    const currentList =
+        flashcardsData[currentCategory];
+
+
+    currentIndex =
+        (currentIndex - 1 + currentList.length) %
+        currentList.length;
+
+
     updateCard();
+
 });
 
-// Inicialização
+
+// =========================================
+// INICIALIZAÇÃO
+// =========================================
+
 updateCard();
