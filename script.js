@@ -33,7 +33,7 @@ const flashcardsData = {
 
         {
             imagem:
-                "imagens/fenda-dupla.jpg",
+                "iPHOTO-2026-09-02-11-03-51 (1).jpg",
 
             pergunta:
                 "O que o experimento de fenda dupla com laser demonstra sobre a natureza da luz?",
