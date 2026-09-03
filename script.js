@@ -154,7 +154,7 @@ const flashcardsData = {
 
         {
             imagem:
-                "imagens/sensor-gas-fumaca.jpg",
+                "iPHOTO-2026-09-02-11-03-10 (2).jpg",
 
             pergunta:
                 "Como funciona o sensor de gás e fumaça conectado ao Arduino?",
